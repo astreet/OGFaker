@@ -48,7 +48,7 @@ require_once('utils.php');
     <?php } ?>
     <meta property="fb:app_id" content="288106721255039" />
 
-    <?php if (isset($_GET['link']) {?>
+    <?php if (isset($_GET['link'])) { ?>
     <meta http-equiv="refresh" content="0;<?php echo htmlspecialchars($_GET['link']); ?>" />
     <?php } ?>
 
