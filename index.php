@@ -44,7 +44,7 @@ require_once('utils.php');
     <?php foreach ($_GET as $key => $value) {
       $esc_key = htmlspecialchars($key);
       $esc_val = htmlspecialchars($val);?>
-      <meta property="<?php "og:".$esc_key ?>" context="<?php $esc_val ?>" />
+      <meta property="<?php "og:".$esc_key ?>" context="<?php '"'.$esc_val.'"'; ?>" />
     <?php } ?>
     <meta property="fb:app_id" content="288106721255039" />
 
