@@ -41,10 +41,10 @@ require_once('utils.php');
     <!-- over facebook.  You should fill these tags in with      -->
     <!-- your data.  To learn more about Open Graph, visit       -->
     <!-- 'https://developers.facebook.com/docs/opengraph/'       -->
-    <?php foreach ($_GET as $key => $value) {
+    <?php foreach ($_GET as $key => $val) {
       $esc_key = htmlspecialchars($key);
       $esc_val = htmlspecialchars($val);?>
-      <meta property=<?php echo '"og:'.$esc_key.'"'; ?> content=<?php echo '"og:'.$esc_key.'"'; ?> />
+      <meta property=<?php echo '"og:'.$esc_key.'"'; ?> content=<?php echo '"'.$esc_val.'"'; ?> />
     <?php } ?>
     <meta property="fb:app_id" content="288106721255039" />
 
